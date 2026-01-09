@@ -1,0 +1,28 @@
+타입스크립트
+
+*.ts =컴파일(tsc)=> *.js => 실행
+
+node.js 설치
+    - 자바스크립트 실행 환경
+    - 필요한 패키지 설치 => npm(도구) 필요 == dependencies
+    - npm i 패키지명
+    {   i = install 
+        -D == --save-dev : 개발할 때만 필요한 패키지
+        -g : global(전역) 설치(기본은 local)}
+
+환경설정
+1. 패키지 매니저를 이용해 typescript 전역설치
+    npm i -g typescript
+
+2. ts 작성 후 컴파일
+    tsc 파일명.ts => 파일명.js
+
+3. 실행
+    node 파일명.js
+
+간단하게 사용하는 방법
+    1. tsc --init : tsconfig.json 자동 생성(타입스크립트 환경설정)
+        tsc : 자동으로 js파일 생성 
+    2. npm i -g ts-node : ts 자체 실행가능 도구 설치 
+        ts-node 파일명.ts 바로 실행
+        ts-node를 버튼클릭으로 설정하는 법
