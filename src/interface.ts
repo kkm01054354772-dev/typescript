@@ -80,13 +80,13 @@ let student2: Student2 = {
   //   4: "F",
 };
 
-interface Car {
+interface Car2 {
   color: string;
   wheels: number;
   start(): void;
 }
 
-class Truck implements Car {
+class Truck implements Car2 {
   color: string;
   wheels: number;
   // 생성자
@@ -99,3 +99,38 @@ class Truck implements Car {
     console.log("Truck start");
   }
 }
+
+const myCar2 = new Truck("white", 4);
+console.log(myCar2);
+
+interface Person {
+  name: string;
+  age: number;
+}
+
+// Employee
+interface Employee extends Person {
+  employeeId: number;
+  department: string;
+}
+
+let employee: Employee = {
+  name: "Jane",
+  age: 30,
+  employeeId: 1001,
+  department: "HR",
+};
+console.log(employee);
+console.log(
+  employee.name,
+  employee.age,
+  employee.employeeId,
+  employee.department
+);
+
+// 인라인방식
+let user4: { name: string; age: number } = {
+  name: "Bob",
+  age: 32,
+};
+console.log(user4);
